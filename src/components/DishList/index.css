@@ -1,0 +1,260 @@
+.dishes-container {
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  max-width: 360px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.heading {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.up-arrow {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.dishes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dish-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.dish-name {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.type-indicator {
+  vertical-align: middle;
+}
+
+.content-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+
+.dish-desc {
+  font-size: 0.75rem;
+  color: #666;
+  flex: 1;
+  margin-right: 10px;
+  line-height: 1.3;
+}
+
+.dish-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+}
+
+.ingredient-btn {
+  background: none;
+  border: none;
+  color: #ff6600;
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.ingredient-btn:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.ingredient-icon {
+  margin-right: 4px;
+  width: 15px;
+  height: 15px;
+}
+
+.add-btn {
+  background: #fefffe;
+  color: #4cc936;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 8px 6px 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  height: 30px;
+  min-width: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-btn {
+  background: #ff8c1a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 8px 6px 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  height: 30px;
+  min-width: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  margin-top: 16px;
+  background: #fff3e0;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: normal;
+  border-radius: 4px;
+}
+
+.arrow {
+  font-size: 1rem;
+  color: #666;
+}
+
+.dish-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 15px;
+  border-radius: 24px 24px 0 0;
+  width: 100%;
+  max-width: 328px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-name {
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.popup-type-indicator {
+  vertical-align: middle;
+}
+
+.popup-remove-btn {
+  background: #ff8c1a;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.popup-remove-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.popup-desc {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.popup-ingredient-btn {
+  background: none;
+  border: none;
+  color: #ff6600;
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-ingredient-btn:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.popup-ingredient-icon {
+  margin-right: 4px;
+  width: 15px;
+  height: 15px;
+}
+
+.close-popup-btn {
+  background: #ff8c1a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}

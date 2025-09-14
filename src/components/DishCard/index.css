@@ -1,0 +1,29 @@
+.dishcard {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    /* keep content close, not stretched */          /* vertical centering */
+  gap: 16px;                     /* space between heading and toggles */
+  margin: 12px 0;
+  padding: 0;                    /* remove extra padding */
+  border: none;                  /* no box/card background */
+  background: transparent;
+}
+
+.mainheading {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;                     /* remove extra margin from h1 */
+}
+
+.imagefilter {
+  display: flex; 
+  gap: 8px;                      /* space between toggles */
+  align-items: center;  
+  margin-left: 60px;         /* align icons properly */
+}
+
+.filter-icon {
+  width: 50px; 
+  height: 26px;
+  cursor: pointer;
+}
